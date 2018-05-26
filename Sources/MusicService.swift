@@ -31,6 +31,7 @@ final class MusicService {
     if text.contains("+") {
       play(fileName: "end")
     } else if let number = parseNumber(text: text) {
+      print("detected \(number)")
       handle(number: number)
     }
   }

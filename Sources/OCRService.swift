@@ -38,7 +38,6 @@ final class OCRService {
     tesseract.image = image.g8_blackAndWhite()
     tesseract.recognize()
     let text = tesseract.recognizedText ?? ""
-    print(text)
     delegate?.ocrService(self, didDetect: text)
   }
 }
