@@ -19,6 +19,14 @@ class ViewController: UIViewController {
   private let ocrService = OCRService()
   private let musicService = MusicService()
 
+  private lazy var label: UILabel = {
+    let label = UILabel()
+    label.textAlignment = .right
+    label.font = UIFont.preferredFont(forTextStyle: .headline)
+    label.textColor = .black
+    return label
+  }()
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -27,6 +35,9 @@ class ViewController: UIViewController {
     activate(
       cameraController.view.anchor.edges
     )
+
+    view.addSubview(label)
+    activate(label.anchor.bottom.right.constant(-20))
 
     visionService.delegate = self
     boxService.delegate = self
@@ -71,6 +82,7 @@ extension ViewController: BoxServiceDelegate {
 
 extension ViewController: OCRServiceDelegate {
   func ocrService(_ service: OCRService, didDetect text: String) {
+    label.text = text
     musicService.handle(text: text)
   }
 }
