@@ -17,6 +17,7 @@ class ViewController: UIViewController {
   private let visionService = VisionService()
   private let boxService = BoxService()
   private let ocrService = OCRService()
+  private let musicService = MusicService()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -58,6 +59,6 @@ extension ViewController: BoxServiceDelegate {
 
 extension ViewController: OCRServiceDelegate {
   func ocrService(_ service: OCRService, didDetect texts: [String]) {
-    print(texts)
+    musicService.handle(texts: texts)
   }
 }

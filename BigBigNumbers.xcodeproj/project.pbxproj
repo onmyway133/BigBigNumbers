@@ -23,6 +23,7 @@
 		D2D285A220B9A22F002F6A89 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D285A120B9A22E002F6A89 /* CoreImage.framework */; };
 		D2D285A420B9A234002F6A89 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D285A320B9A234002F6A89 /* TesseractOCR.framework */; };
 		D2D285A720B9A279002F6A89 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D2D285A620B9A279002F6A89 /* tessdata */; };
+		D2D285A920B9A488002F6A89 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D285A820B9A488002F6A89 /* MusicService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D2D285A120B9A22E002F6A89 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D2D285A320B9A234002F6A89 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D285A620B9A279002F6A89 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		D2D285A820B9A488002F6A89 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
 		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				D2D2856E20B9758F002F6A89 /* BoxService.swift */,
 				D2D2857020B98750002F6A89 /* Image+Extension.swift */,
 				D2D2857220B99A79002F6A89 /* OCRService.swift */,
+				D2D285A820B9A488002F6A89 /* MusicService.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D2857320B99A79002F6A89 /* OCRService.swift in Sources */,
+				D2D285A920B9A488002F6A89 /* MusicService.swift in Sources */,
 				D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */,
 				D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */,
 				D2D2856B20B96DC6002F6A89 /* ViewController+Extensions.swift in Sources */,
