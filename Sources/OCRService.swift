@@ -10,7 +10,7 @@ import SwiftOCR
 import TesseractOCR
 
 protocol OCRServiceDelegate: class {
-  func ocrService(_ service: OCRService, didDetect texts: [String])
+  func ocrService(_ service: OCRService, didDetect text: String)
 }
 
 final class OCRService {
@@ -24,33 +24,19 @@ final class OCRService {
     tesseract.pageSegmentationMode = .singleBlock
   }
 
-  func handle(images: [UIImage]) {
-    guard let biggestImage = images.sorted(by: {
-      $0.size.width > $1.size.width && $0.size.height > $1.size.height
-    }).first else {
-      return
-    }
-
-    handleWithTesseract(images: [biggestImage])
+  func handle(image: UIImage) {
+    handleWithTesseract(image: image)
   }
 
-  private func handleWithSwiftOCR(images: [UIImage]) {
-    images.forEach { image in
-      instance.recognize(image, { string in
-        print(string)
-      })
-    }
-  }
-
-  private func handleWithTesseract(images: [UIImage]) {
-    let texts: [String] = images.compactMap({ image in
-      tesseract.image = image.g8_blackAndWhite()
-      tesseract.recognize()
-      return tesseract.recognizedText
+  private func handleWithSwiftOCR(image: UIImage) {
+    instance.recognize(image, { string in
+      print(string)
     })
+  }
 
-    print(texts)
-
-    delegate?.ocrService(self, didDetect: texts)
+  private func handleWithTesseract(image: UIImage) {
+    tesseract.image = image.g8_blackAndWhite()
+    tesseract.recognize()
+    delegate?.ocrService(self, didDetect: tesseract.recognizedText)
   }
 }

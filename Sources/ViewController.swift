@@ -59,12 +59,18 @@ extension ViewController: VisionServiceDelegate {
 
 extension ViewController: BoxServiceDelegate {
   func boxService(_ service: BoxService, didDetect images: [UIImage]) {
-    ocrService.handle(images: images)
+    guard let biggestImage = images.sorted(by: {
+      $0.size.width > $1.size.width && $0.size.height > $1.size.height
+    }).first else {
+      return
+    }
+
+    ocrService.handle(image: biggestImage)
   }
 }
 
 extension ViewController: OCRServiceDelegate {
-  func ocrService(_ service: OCRService, didDetect texts: [String]) {
-    musicService.handle(texts: texts)
+  func ocrService(_ service: OCRService, didDetect text: String) {
+    musicService.handle(text: text)
   }
 }
