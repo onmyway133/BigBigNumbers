@@ -28,9 +28,7 @@ final class MusicService {
   }
 
   func handle(text: String) {
-    if text.contains("+") {
-      play(fileName: "end")
-    } else if let number = parseNumber(text: text) {
+    if let number = parseNumber(text: text) {
       print("detected \(number)")
       handle(number: number)
     }
@@ -53,6 +51,8 @@ final class MusicService {
     case ..<1_000_000_000:
       let fileName = ["8", "9", "10", "11"].shuffled().first!
       play(fileName: fileName)
+    case ..<Int.max:
+      play(fileName: "end")
     default:
       break
     }
@@ -75,7 +75,7 @@ final class MusicService {
   }
 
   private func parseNumber(text: String) -> Int? {
-    let acceptedLetters = Array(0...9).map(String.init) + ["-+"]
+    let acceptedLetters = Array(0...9).map(String.init) + ["-"]
 
     let characters = text
       .replacingOccurrences(of: "\n", with: "")
