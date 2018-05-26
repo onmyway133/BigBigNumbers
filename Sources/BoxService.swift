@@ -36,7 +36,7 @@ final class BoxService {
         transform = transform.translatedBy(x: 0, y: -1)
         let rect = result.boundingBox.applying(transform)
 
-        let scaleUp: CGFloat = 0.1
+        let scaleUp: CGFloat = 0.2
         let biggerRect = rect.insetBy(
           dx: -rect.size.width * scaleUp,
           dy: -rect.size.height * scaleUp

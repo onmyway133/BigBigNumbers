@@ -5,5 +5,6 @@ target 'BigBigNumbers' do
 
   pod 'Anchors'
   pod 'SwiftOCR'
+  pod 'TesseractOCRiOS'
 
 end
