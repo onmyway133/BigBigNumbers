@@ -16,6 +16,7 @@ class ViewController: UIViewController {
   private let cameraController = CameraController()
   private let visionService = VisionService()
   private let boxService = BoxService()
+  private let ocrService = OCRService()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -50,6 +51,6 @@ extension ViewController: VisionServiceDelegate {
 
 extension ViewController: BoxServiceDelegate {
   func boxService(_ service: BoxService, didDetect images: [UIImage]) {
-
+    ocrService.handle(images: images)
   }
 }
