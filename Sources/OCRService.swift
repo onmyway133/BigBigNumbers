@@ -25,7 +25,13 @@ final class OCRService {
   }
 
   func handle(images: [UIImage]) {
-    handleWithTesseract(images: images)
+    guard let biggestImage = images.sorted(by: {
+      $0.size.width > $1.size.width && $0.size.height > $1.size.height
+    }).first else {
+      return
+    }
+
+    handleWithTesseract(images: [biggestImage])
   }
 
   private func handleWithSwiftOCR(images: [UIImage]) {
