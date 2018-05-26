@@ -11,6 +11,8 @@ import AVFoundation
 
 final class VisionService {
 
+  var handleResults: (([VNTextObservation]) -> Void)?
+
   func handle(buffer: CMSampleBuffer) {
     guard
       let pixelBuffer = CMSampleBufferGetImageBuffer(buffer)
@@ -45,6 +47,7 @@ final class VisionService {
     else {
       return
     }
-    
+
+    handleResults?(results)
   }
 }

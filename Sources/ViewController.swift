@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
   private let cameraController = CameraController()
   private let visionService = VisionService()
+  private let boxService = BoxService()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +24,14 @@ class ViewController: UIViewController {
     activate(
       cameraController.view.anchor.edges
     )
+
+    visionService.handleResults = { [weak self] results in
+      guard let `self` = self else {
+        return
+      }
+
+      self.boxService.handle(results: results, on: self.cameraController.view)
+    }
   }
 }
 
