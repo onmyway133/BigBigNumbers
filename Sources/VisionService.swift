@@ -19,14 +19,15 @@ final class VisionService {
   weak var delegate: VisionServiceDelegate?
 
   func handle(buffer: CMSampleBuffer) {
-    guard
-      let pixelBuffer = CMSampleBufferGetImageBuffer(buffer)
-    else {
+    guard let pixelBuffer = CMSampleBufferGetImageBuffer(buffer) else {
       return
     }
 
     let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
-    let image = UIImage(ciImage: ciImage)
+    guard let image = ciImage.toUIImage() else {
+      return
+    }
+
     makeRequest(image: image)
   }
 

@@ -22,7 +22,7 @@ final class BoxService {
       layer.borderColor = UIColor.green.cgColor
 
       var transform = CGAffineTransform.identity
-      transform = transform.scaledBy(x: view.bounds.size.width, y: -view.bounds.size.height)
+      transform = transform.scaledBy(x: image.size.width, y: -image.size.height)
       transform = transform.translatedBy(x: 0, y: -1)
 
       let rect = result.boundingBox.applying(transform)

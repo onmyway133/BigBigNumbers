@@ -17,6 +17,7 @@
 		D2D2856B20B96DC6002F6A89 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856A20B96DC6002F6A89 /* ViewController+Extensions.swift */; };
 		D2D2856D20B970B7002F6A89 /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856C20B970B7002F6A89 /* VisionService.swift */; };
 		D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856E20B9758F002F6A89 /* BoxService.swift */; };
+		D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2857020B98750002F6A89 /* Image+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D2D2856A20B96DC6002F6A89 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D2D2856C20B970B7002F6A89 /* VisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
 		D2D2856E20B9758F002F6A89 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
+		D2D2857020B98750002F6A89 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				D2D2856A20B96DC6002F6A89 /* ViewController+Extensions.swift */,
 				D2D2856C20B970B7002F6A89 /* VisionService.swift */,
 				D2D2856E20B9758F002F6A89 /* BoxService.swift */,
+				D2D2857020B98750002F6A89 /* Image+Extension.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */,
 				D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */,
 				D2D2856B20B96DC6002F6A89 /* ViewController+Extensions.swift in Sources */,
 				D2D2856920B96AC0002F6A89 /* CameraController.swift in Sources */,
