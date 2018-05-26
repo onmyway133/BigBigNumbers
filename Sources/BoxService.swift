@@ -9,8 +9,14 @@
 import UIKit
 import Vision
 
+protocol BoxServiceDelegate: class {
+  func boxService(_ service: BoxService, didDetect images: [UIImage])
+}
+
 final class BoxService {
   private var layers: [CALayer] = []
+
+  weak var delegate: BoxServiceDelegate?
 
   func handle(image: UIImage, results: [VNTextObservation], on view: UIView) {
     reset()
@@ -22,7 +28,7 @@ final class BoxService {
       layer.borderColor = UIColor.green.cgColor
 
       var transform = CGAffineTransform.identity
-      transform = transform.scaledBy(x: image.size.width, y: -image.size.height)
+      transform = transform.scaledBy(x: view.frame.size.width, y: -view.frame.size.height)
       transform = transform.translatedBy(x: 0, y: -1)
 
       let rect = result.boundingBox.applying(transform)

@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     )
 
     visionService.delegate = self
+    boxService.delegate = self
   }
 }
 
@@ -39,5 +40,11 @@ extension ViewController: CameraControllerDelegate {
 extension ViewController: VisionServiceDelegate {
   func visionService(_ version: VisionService, didDetect image: UIImage, results: [VNTextObservation]) {
     boxService.handle(image: image, results: results, on: cameraController.view)
+  }
+}
+
+extension ViewController: BoxServiceDelegate {
+  func boxService(_ service: BoxService, didDetect images: [UIImage]) {
+
   }
 }
