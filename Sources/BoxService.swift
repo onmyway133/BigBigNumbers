@@ -21,6 +21,8 @@ final class BoxService {
   func handle(image: UIImage, results: [VNTextObservation], on view: UIView) {
     reset()
 
+    var images: [UIImage] = []
+
     layers = results.map({ result in
       let layer = CALayer()
       view.layer.addSublayer(layer)
@@ -28,14 +30,28 @@ final class BoxService {
       layer.borderColor = UIColor.green.cgColor
 
       var transform = CGAffineTransform.identity
-      transform = transform.scaledBy(x: view.frame.size.width, y: -view.frame.size.height)
+      transform = transform.scaledBy(x: image.size.width, y: -image.size.height)
       transform = transform.translatedBy(x: 0, y: -1)
 
       let rect = result.boundingBox.applying(transform)
       layer.frame = rect
 
+      if let croppedImage = crop(image: image, rect: rect) {
+        images.append(croppedImage)
+      }
+
       return layer
     })
+
+    delegate?.boxService(self, didDetect: images)
+  }
+
+  private func crop(image: UIImage, rect: CGRect) -> UIImage? {
+    guard let cropped = image.cgImage?.cropping(to: rect) else {
+      return nil
+    }
+
+    return UIImage(cgImage: cropped, scale: image.scale, orientation: image.imageOrientation)
   }
 
   private func reset() {
