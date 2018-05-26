@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958BE4FCADCDEDC3F5DABF64 /* Pods_BigBigNumbers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A227DB011B24110FABADD93C /* Pods_BigBigNumbers.framework */; };
 		D2D2856220B96690002F6A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D2855920B96690002F6A89 /* Assets.xcassets */; };
 		D2D2856320B96690002F6A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D2855A20B96690002F6A89 /* LaunchScreen.storyboard */; };
 		D2D2856420B96690002F6A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D2855C20B96690002F6A89 /* Main.storyboard */; };
-		D2D2856520B96690002F6A89 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D2855E20B96690002F6A89 /* Info.plist */; };
 		D2D2856620B96690002F6A89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856020B96690002F6A89 /* ViewController.swift */; };
 		D2D2856720B96690002F6A89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856120B96690002F6A89 /* AppDelegate.swift */; };
+		D2D2856920B96AC0002F6A89 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856820B96AC0002F6A89 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D8715398EDCF9B2BC04AECD /* Pods-BigBigNumbers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.release.xcconfig"; sourceTree = "<group>"; };
+		A227DB011B24110FABADD93C /* Pods_BigBigNumbers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBigNumbers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D2854320B9661D002F6A89 /* BigBigNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBigNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D2855920B96690002F6A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D2855B20B96690002F6A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -23,6 +26,8 @@
 		D2D2855E20B96690002F6A89 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D2856020B96690002F6A89 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2D2856120B96690002F6A89 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2D2856820B96AC0002F6A89 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958BE4FCADCDEDC3F5DABF64 /* Pods_BigBigNumbers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3740E0A505E9F41FB1D224C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */,
+				7D8715398EDCF9B2BC04AECD /* Pods-BigBigNumbers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B6DF9115FF75AE20BAAE934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A227DB011B24110FABADD93C /* Pods_BigBigNumbers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2D2853A20B9661D002F6A89 = {
 			isa = PBXGroup;
 			children = (
 				D2D2855820B96690002F6A89 /* Resources */,
 				D2D2855F20B96690002F6A89 /* Sources */,
 				D2D2854420B9661D002F6A89 /* Products */,
+				3740E0A505E9F41FB1D224C6 /* Pods */,
+				7B6DF9115FF75AE20BAAE934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +94,7 @@
 			children = (
 				D2D2856020B96690002F6A89 /* ViewController.swift */,
 				D2D2856120B96690002F6A89 /* AppDelegate.swift */,
+				D2D2856820B96AC0002F6A89 /* CameraController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -80,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D2855520B9661E002F6A89 /* Build configuration list for PBXNativeTarget "BigBigNumbers" */;
 			buildPhases = (
+				F1EFEF71191273D3C2427099 /* [CP] Check Pods Manifest.lock */,
 				D2D2853F20B9661D002F6A89 /* Sources */,
 				D2D2854020B9661D002F6A89 /* Frameworks */,
 				D2D2854120B9661D002F6A89 /* Resources */,
+				40F3C7B68F8EB8CEB3A8F373 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,7 +159,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D2856520B96690002F6A89 /* Info.plist in Resources */,
 				D2D2856420B96690002F6A89 /* Main.storyboard in Resources */,
 				D2D2856220B96690002F6A89 /* Assets.xcassets in Resources */,
 				D2D2856320B96690002F6A89 /* LaunchScreen.storyboard in Resources */,
@@ -140,11 +167,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40F3C7B68F8EB8CEB3A8F373 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Anchors/Anchors.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchors.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1EFEF71191273D3C2427099 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigBigNumbers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2D2853F20B9661D002F6A89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D2856920B96AC0002F6A89 /* CameraController.swift in Sources */,
 				D2D2856720B96690002F6A89 /* AppDelegate.swift in Sources */,
 				D2D2856620B96690002F6A89 /* ViewController.swift in Sources */,
 			);
@@ -288,6 +355,7 @@
 		};
 		D2D2855620B9661E002F6A89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +374,7 @@
 		};
 		D2D2855720B9661E002F6A89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8715398EDCF9B2BC04AECD /* Pods-BigBigNumbers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
