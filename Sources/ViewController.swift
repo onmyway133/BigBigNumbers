@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 
     visionService.delegate = self
     boxService.delegate = self
+    ocrService.delegate = self
   }
 }
 
@@ -52,5 +53,11 @@ extension ViewController: VisionServiceDelegate {
 extension ViewController: BoxServiceDelegate {
   func boxService(_ service: BoxService, didDetect images: [UIImage]) {
     ocrService.handle(images: images)
+  }
+}
+
+extension ViewController: OCRServiceDelegate {
+  func ocrService(_ service: OCRService, didDetect texts: [String]) {
+    print(texts)
   }
 }

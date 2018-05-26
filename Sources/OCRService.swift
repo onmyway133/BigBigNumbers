@@ -9,9 +9,15 @@
 import SwiftOCR
 import TesseractOCR
 
+protocol OCRServiceDelegate: class {
+  func ocrService(_ service: OCRService, didDetect texts: [String])
+}
+
 final class OCRService {
   private let instance = SwiftOCR()
   private let tesseract = G8Tesseract(language: "eng")!
+
+  weak var delegate: OCRServiceDelegate?
 
   init() {
     tesseract.engineMode = .tesseractOnly
@@ -31,10 +37,12 @@ final class OCRService {
   }
 
   private func handleWithTesseract(images: [UIImage]) {
-    images.forEach { image in
+    let texts: [String] = images.compactMap({ image in
       tesseract.image = image.g8_blackAndWhite()
       tesseract.recognize()
-      print(tesseract.recognizedText)
-    }
+      return tesseract.recognizedText
+    })
+
+    delegate?.ocrService(self, didDetect: texts)
   }
 }
