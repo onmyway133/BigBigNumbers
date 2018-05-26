@@ -28,14 +28,24 @@ final class MusicService {
   }
 
   func handle(texts: [String]) {
-    let numbers = texts.compactMap({ parseNumber(text: $0) })
-    handle(numbers: numbers)
+    if checkPlus(texts: texts) {
+      play(fileName: "end")
+    } else {
+      let numbers = texts.compactMap({ parseNumber(text: $0) })
+      handle(numbers: numbers)
+    }
   }
 
   private func handle(numbers: [Int]) {
     if let first = numbers.first {
       handle(number: first)
     }
+  }
+
+  private func checkPlus(texts: [String]) -> Bool {
+    return texts.contains(where: { text in
+      return text.contains("+")
+    })
   }
 
   private func handle(number: Int) {

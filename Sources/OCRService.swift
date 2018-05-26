@@ -20,8 +20,8 @@ final class OCRService {
   weak var delegate: OCRServiceDelegate?
 
   init() {
-    tesseract.engineMode = .tesseractOnly
-    tesseract.pageSegmentationMode = .auto
+    tesseract.engineMode = .tesseractCubeCombined
+    tesseract.pageSegmentationMode = .singleBlock
   }
 
   func handle(images: [UIImage]) {
