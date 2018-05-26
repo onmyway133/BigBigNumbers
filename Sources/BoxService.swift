@@ -16,7 +16,7 @@ final class BoxService {
     reset()
 
     layers = results.map({ result in
-      let layer = CAShapeLayer()
+      let layer = CALayer()
       view.layer.addSublayer(layer)
       layer.borderWidth = 2
       layer.borderColor = UIColor.green.cgColor
