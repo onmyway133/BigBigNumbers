@@ -8,6 +8,7 @@
 
 import UIKit
 import Anchors
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    cameraController.delegate = self
     add(childController: cameraController)
     activate(
       cameraController.view.anchor.edges
@@ -23,3 +25,8 @@ class ViewController: UIViewController {
   }
 }
 
+extension ViewController: CameraControllerDelegate {
+  func cameraController(_ controller: CameraController, didCapture buffer: CMSampleBuffer) {
+
+  }
+}

@@ -9,6 +9,10 @@
 import UIKit
 import AVFoundation
 
+protocol CameraControllerDelegate: class {
+  func cameraController(_ controller: CameraController, didCapture buffer: CMSampleBuffer)
+}
+
 final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
   private lazy var cameraLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
 
@@ -26,6 +30,8 @@ final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBu
     session.addInput(input)
     return session
   }()
+
+  weak var delegate: CameraControllerDelegate?
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,7 +55,11 @@ final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBu
     self.cameraLayer.frame = view.bounds
   }
 
-  func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+  func captureOutput(
+    _ output: AVCaptureOutput,
+    didOutput sampleBuffer: CMSampleBuffer,
+    from connection: AVCaptureConnection) {
 
+    delegate?.cameraController(self, didCapture: sampleBuffer)
   }
 }
