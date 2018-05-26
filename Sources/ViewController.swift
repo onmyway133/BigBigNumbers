@@ -33,8 +33,8 @@ class ViewController: UIViewController {
     ocrService.delegate = self
   }
 
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesBegan(touches, with: event)
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
     musicService.play(fileName: "introduction")
   }
