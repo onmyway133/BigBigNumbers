@@ -30,6 +30,8 @@ final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBu
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    view.layer.addSublayer(cameraLayer)
+
     // register to receive buffers from the camera
     let videoOutput = AVCaptureVideoDataOutput()
     videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "MyQueue"))
