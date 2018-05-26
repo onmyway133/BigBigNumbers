@@ -72,10 +72,12 @@ final class MusicService {
   }
 
   private func parseNumber(text: String) -> Int? {
+    let acceptedLetters = Array(0..<9).map(String.init) + ["-"]
+
     let characters = text
       .replacingOccurrences(of: "\n", with: "")
       .replacingOccurrences(of: "o", with: "0")
-      .filter({ "0"..."9" ~= $0 })
+      .filter({ acceptedLetters.contains(String($0)) })
 
     return Int(String(characters))
   }
