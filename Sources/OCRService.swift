@@ -30,7 +30,9 @@ final class OCRService {
 
   private func handleWithSwiftOCR(image: UIImage) {
     instance.recognize(image, { string in
-      print(string)
+      DispatchQueue.main.async {
+        self.delegate?.ocrService(self, didDetect: string)
+      }
     })
   }
 
