@@ -47,8 +47,11 @@ final class MusicService {
     case ..<10_000:
       play(fileName: "2")
       break
-    case ..<1_000_100_000:
-      let fileName = ["4", "5", "6", "7", "8", "9", "10", "11"].shuffled().first!
+    case ..<1_000_000:
+      let fileName = ["4", "5", "6", "7"].shuffled().first!
+      play(fileName: fileName)
+    case ..<1_000_000_000:
+      let fileName = ["8", "9", "10", "11"].shuffled().first!
       play(fileName: fileName)
     default:
       break
