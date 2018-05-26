@@ -19,27 +19,10 @@
 		D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2856E20B9758F002F6A89 /* BoxService.swift */; };
 		D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2857020B98750002F6A89 /* Image+Extension.swift */; };
 		D2D2857320B99A79002F6A89 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2857220B99A79002F6A89 /* OCRService.swift */; };
-		D2D2858A20B9A189002F6A89 /* eng.cube.word-freq in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857520B9A189002F6A89 /* eng.cube.word-freq */; };
-		D2D2858B20B9A189002F6A89 /* fra.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857620B9A189002F6A89 /* fra.cube.bigrams */; };
-		D2D2858C20B9A189002F6A89 /* fra.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857720B9A189002F6A89 /* fra.cube.nn */; };
-		D2D2858D20B9A189002F6A89 /* fra.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857820B9A189002F6A89 /* fra.cube.size */; };
-		D2D2858E20B9A189002F6A89 /* eng.cube.bigrams in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857920B9A189002F6A89 /* eng.cube.bigrams */; };
-		D2D2858F20B9A189002F6A89 /* slk-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857A20B9A189002F6A89 /* slk-frak.traineddata */; };
-		D2D2859020B9A189002F6A89 /* eng.cube.size in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857B20B9A189002F6A89 /* eng.cube.size */; };
-		D2D2859120B9A189002F6A89 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857C20B9A189002F6A89 /* eng.traineddata */; };
-		D2D2859220B9A189002F6A89 /* eng.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857D20B9A189002F6A89 /* eng.cube.fold */; };
-		D2D2859320B9A189002F6A89 /* fra.cube.fold in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857E20B9A189002F6A89 /* fra.cube.fold */; };
-		D2D2859420B9A189002F6A89 /* eng.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = D2D2857F20B9A189002F6A89 /* eng.cube.params */; };
-		D2D2859520B9A189002F6A89 /* fra.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = D2D2858020B9A189002F6A89 /* fra.cube.lm */; };
-		D2D2859620B9A189002F6A89 /* eng.cube.lm in Sources */ = {isa = PBXBuildFile; fileRef = D2D2858120B9A189002F6A89 /* eng.cube.lm */; };
-		D2D2859720B9A189002F6A89 /* dan-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858220B9A189002F6A89 /* dan-frak.traineddata */; };
-		D2D2859820B9A189002F6A89 /* deu-frak.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858320B9A189002F6A89 /* deu-frak.traineddata */; };
-		D2D2859920B9A189002F6A89 /* fra.cube.word-freq in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858420B9A189002F6A89 /* fra.cube.word-freq */; };
-		D2D2859A20B9A189002F6A89 /* fra.cube.params in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858520B9A189002F6A89 /* fra.cube.params */; };
-		D2D2859B20B9A189002F6A89 /* fra.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858620B9A189002F6A89 /* fra.traineddata */; };
-		D2D2859C20B9A189002F6A89 /* eng.cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858720B9A189002F6A89 /* eng.cube.nn */; };
-		D2D2859D20B9A189002F6A89 /* eng.tesseract_cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858820B9A189002F6A89 /* eng.tesseract_cube.nn */; };
-		D2D2859E20B9A189002F6A89 /* fra.tesseract_cube.nn in Resources */ = {isa = PBXBuildFile; fileRef = D2D2858920B9A189002F6A89 /* fra.tesseract_cube.nn */; };
+		D2D285A020B9A222002F6A89 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2859F20B9A222002F6A89 /* libstdc++.tbd */; };
+		D2D285A220B9A22F002F6A89 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D285A120B9A22E002F6A89 /* CoreImage.framework */; };
+		D2D285A420B9A234002F6A89 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D285A320B9A234002F6A89 /* TesseractOCR.framework */; };
+		D2D285A720B9A279002F6A89 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D2D285A620B9A279002F6A89 /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,27 +41,10 @@
 		D2D2856E20B9758F002F6A89 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		D2D2857020B98750002F6A89 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		D2D2857220B99A79002F6A89 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
-		D2D2857520B9A189002F6A89 /* eng.cube.word-freq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "eng.cube.word-freq"; sourceTree = "<group>"; };
-		D2D2857620B9A189002F6A89 /* fra.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.bigrams; sourceTree = "<group>"; };
-		D2D2857720B9A189002F6A89 /* fra.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.cube.nn; sourceTree = "<group>"; };
-		D2D2857820B9A189002F6A89 /* fra.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.size; sourceTree = "<group>"; };
-		D2D2857920B9A189002F6A89 /* eng.cube.bigrams */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.bigrams; sourceTree = "<group>"; };
-		D2D2857A20B9A189002F6A89 /* slk-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "slk-frak.traineddata"; sourceTree = "<group>"; };
-		D2D2857B20B9A189002F6A89 /* eng.cube.size */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.size; sourceTree = "<group>"; };
-		D2D2857C20B9A189002F6A89 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
-		D2D2857D20B9A189002F6A89 /* eng.cube.fold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.fold; sourceTree = "<group>"; };
-		D2D2857E20B9A189002F6A89 /* fra.cube.fold */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.fold; sourceTree = "<group>"; };
-		D2D2857F20B9A189002F6A89 /* eng.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eng.cube.params; sourceTree = "<group>"; };
-		D2D2858020B9A189002F6A89 /* fra.cube.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = fra.cube.lm; sourceTree = "<group>"; };
-		D2D2858120B9A189002F6A89 /* eng.cube.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = eng.cube.lm; sourceTree = "<group>"; };
-		D2D2858220B9A189002F6A89 /* dan-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dan-frak.traineddata"; sourceTree = "<group>"; };
-		D2D2858320B9A189002F6A89 /* deu-frak.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "deu-frak.traineddata"; sourceTree = "<group>"; };
-		D2D2858420B9A189002F6A89 /* fra.cube.word-freq */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fra.cube.word-freq"; sourceTree = "<group>"; };
-		D2D2858520B9A189002F6A89 /* fra.cube.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fra.cube.params; sourceTree = "<group>"; };
-		D2D2858620B9A189002F6A89 /* fra.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.traineddata; sourceTree = "<group>"; };
-		D2D2858720B9A189002F6A89 /* eng.cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.cube.nn; sourceTree = "<group>"; };
-		D2D2858820B9A189002F6A89 /* eng.tesseract_cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.tesseract_cube.nn; sourceTree = "<group>"; };
-		D2D2858920B9A189002F6A89 /* fra.tesseract_cube.nn */ = {isa = PBXFileReference; lastKnownFileType = file; path = fra.tesseract_cube.nn; sourceTree = "<group>"; };
+		D2D2859F20B9A222002F6A89 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D2D285A120B9A22E002F6A89 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D2D285A320B9A234002F6A89 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D285A620B9A279002F6A89 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D285A420B9A234002F6A89 /* TesseractOCR.framework in Frameworks */,
+				D2D285A220B9A22F002F6A89 /* CoreImage.framework in Frameworks */,
+				D2D285A020B9A222002F6A89 /* libstdc++.tbd in Frameworks */,
 				958BE4FCADCDEDC3F5DABF64 /* Pods_BigBigNumbers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +75,9 @@
 		7B6DF9115FF75AE20BAAE934 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2D285A320B9A234002F6A89 /* TesseractOCR.framework */,
+				D2D285A120B9A22E002F6A89 /* CoreImage.framework */,
+				D2D2859F20B9A222002F6A89 /* libstdc++.tbd */,
 				A227DB011B24110FABADD93C /* Pods_BigBigNumbers.framework */,
 			);
 			name = Frameworks;
@@ -133,7 +105,7 @@
 		D2D2855820B96690002F6A89 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D2D2857420B9A189002F6A89 /* tessdata */,
+				D2D285A620B9A279002F6A89 /* tessdata */,
 				D2D2855920B96690002F6A89 /* Assets.xcassets */,
 				D2D2855A20B96690002F6A89 /* LaunchScreen.storyboard */,
 				D2D2855C20B96690002F6A89 /* Main.storyboard */,
@@ -155,34 +127,6 @@
 				D2D2857220B99A79002F6A89 /* OCRService.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D2D2857420B9A189002F6A89 /* tessdata */ = {
-			isa = PBXGroup;
-			children = (
-				D2D2857520B9A189002F6A89 /* eng.cube.word-freq */,
-				D2D2857620B9A189002F6A89 /* fra.cube.bigrams */,
-				D2D2857720B9A189002F6A89 /* fra.cube.nn */,
-				D2D2857820B9A189002F6A89 /* fra.cube.size */,
-				D2D2857920B9A189002F6A89 /* eng.cube.bigrams */,
-				D2D2857A20B9A189002F6A89 /* slk-frak.traineddata */,
-				D2D2857B20B9A189002F6A89 /* eng.cube.size */,
-				D2D2857C20B9A189002F6A89 /* eng.traineddata */,
-				D2D2857D20B9A189002F6A89 /* eng.cube.fold */,
-				D2D2857E20B9A189002F6A89 /* fra.cube.fold */,
-				D2D2857F20B9A189002F6A89 /* eng.cube.params */,
-				D2D2858020B9A189002F6A89 /* fra.cube.lm */,
-				D2D2858120B9A189002F6A89 /* eng.cube.lm */,
-				D2D2858220B9A189002F6A89 /* dan-frak.traineddata */,
-				D2D2858320B9A189002F6A89 /* deu-frak.traineddata */,
-				D2D2858420B9A189002F6A89 /* fra.cube.word-freq */,
-				D2D2858520B9A189002F6A89 /* fra.cube.params */,
-				D2D2858620B9A189002F6A89 /* fra.traineddata */,
-				D2D2858720B9A189002F6A89 /* eng.cube.nn */,
-				D2D2858820B9A189002F6A89 /* eng.tesseract_cube.nn */,
-				D2D2858920B9A189002F6A89 /* fra.tesseract_cube.nn */,
-			);
-			path = tessdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,28 +189,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D2859320B9A189002F6A89 /* fra.cube.fold in Resources */,
-				D2D2858F20B9A189002F6A89 /* slk-frak.traineddata in Resources */,
-				D2D2859820B9A189002F6A89 /* deu-frak.traineddata in Resources */,
 				D2D2856420B96690002F6A89 /* Main.storyboard in Resources */,
-				D2D2858D20B9A189002F6A89 /* fra.cube.size in Resources */,
-				D2D2858E20B9A189002F6A89 /* eng.cube.bigrams in Resources */,
-				D2D2859B20B9A189002F6A89 /* fra.traineddata in Resources */,
-				D2D2859720B9A189002F6A89 /* dan-frak.traineddata in Resources */,
-				D2D2858B20B9A189002F6A89 /* fra.cube.bigrams in Resources */,
+				D2D285A720B9A279002F6A89 /* tessdata in Resources */,
 				D2D2856220B96690002F6A89 /* Assets.xcassets in Resources */,
-				D2D2859920B9A189002F6A89 /* fra.cube.word-freq in Resources */,
-				D2D2858C20B9A189002F6A89 /* fra.cube.nn in Resources */,
-				D2D2859C20B9A189002F6A89 /* eng.cube.nn in Resources */,
-				D2D2859420B9A189002F6A89 /* eng.cube.params in Resources */,
-				D2D2859E20B9A189002F6A89 /* fra.tesseract_cube.nn in Resources */,
-				D2D2859220B9A189002F6A89 /* eng.cube.fold in Resources */,
-				D2D2859020B9A189002F6A89 /* eng.cube.size in Resources */,
-				D2D2859120B9A189002F6A89 /* eng.traineddata in Resources */,
-				D2D2859D20B9A189002F6A89 /* eng.tesseract_cube.nn in Resources */,
-				D2D2858A20B9A189002F6A89 /* eng.cube.word-freq in Resources */,
 				D2D2856320B96690002F6A89 /* LaunchScreen.storyboard in Resources */,
-				D2D2859A20B9A189002F6A89 /* fra.cube.params in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,14 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D2859520B9A189002F6A89 /* fra.cube.lm in Sources */,
 				D2D2857320B99A79002F6A89 /* OCRService.swift in Sources */,
 				D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */,
 				D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */,
 				D2D2856B20B96DC6002F6A89 /* ViewController+Extensions.swift in Sources */,
 				D2D2856920B96AC0002F6A89 /* CameraController.swift in Sources */,
 				D2D2856720B96690002F6A89 /* AppDelegate.swift in Sources */,
-				D2D2859620B9A189002F6A89 /* eng.cube.lm in Sources */,
 				D2D2856620B96690002F6A89 /* ViewController.swift in Sources */,
 				D2D2856D20B970B7002F6A89 /* VisionService.swift in Sources */,
 			);
