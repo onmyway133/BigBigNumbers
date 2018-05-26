@@ -33,7 +33,28 @@ final class MusicService {
   }
 
   private func handle(numbers: [Int]) {
-    play(fileName: "7")
+    if let first = numbers.first {
+      handle(number: first)
+    }
+  }
+
+  private func handle(number: Int) {
+    switch number {
+    case ..<0:
+      play(fileName: "1")
+      break
+    case ..<10:
+      play(fileName: "3")
+      break
+    case ..<100:
+      play(fileName: "2")
+      break
+    case ..<1_000_100:
+      let fileName = ["4", "5", "6", "7", "8", "9", "10", "11"].shuffled().first!
+      play(fileName: fileName)
+    default:
+      break
+    }
   }
 
   func play(fileName: String) {

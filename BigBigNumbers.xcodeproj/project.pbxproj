@@ -37,6 +37,7 @@
 		D2D285C220B9AF5C002F6A89 /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B520B9AF5C002F6A89 /* 6.m4a */; };
 		D2D285C320B9AF5C002F6A89 /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B620B9AF5C002F6A89 /* 4.m4a */; };
 		D2D285C420B9AF5C002F6A89 /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B720B9AF5C002F6A89 /* 5.m4a */; };
+		D2D285C820B9B4CF002F6A89 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D285C720B9B4CF002F6A89 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		D2D285B520B9AF5C002F6A89 /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.m4a; sourceTree = "<group>"; };
 		D2D285B620B9AF5C002F6A89 /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.m4a; sourceTree = "<group>"; };
 		D2D285B720B9AF5C002F6A89 /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
+		D2D285C720B9B4CF002F6A89 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				D2D2857020B98750002F6A89 /* Image+Extension.swift */,
 				D2D2857220B99A79002F6A89 /* OCRService.swift */,
 				D2D285A820B9A488002F6A89 /* MusicService.swift */,
+				D2D285C720B9B4CF002F6A89 /* Array+Extensions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D2857320B99A79002F6A89 /* OCRService.swift in Sources */,
+				D2D285C820B9B4CF002F6A89 /* Array+Extensions.swift in Sources */,
 				D2D285A920B9A488002F6A89 /* MusicService.swift in Sources */,
 				D2D2857120B98750002F6A89 /* Image+Extension.swift in Sources */,
 				D2D2856F20B9758F002F6A89 /* BoxService.swift in Sources */,
