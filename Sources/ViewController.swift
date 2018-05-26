@@ -9,6 +9,7 @@
 import UIKit
 import Anchors
 import AVFoundation
+import Vision
 
 class ViewController: UIViewController {
 
@@ -25,18 +26,18 @@ class ViewController: UIViewController {
       cameraController.view.anchor.edges
     )
 
-    visionService.handleResults = { [weak self] results in
-      guard let `self` = self else {
-        return
-      }
-
-      self.boxService.handle(results: results, on: self.cameraController.view)
-    }
+    visionService.delegate = self
   }
 }
 
 extension ViewController: CameraControllerDelegate {
   func cameraController(_ controller: CameraController, didCapture buffer: CMSampleBuffer) {
     visionService.handle(buffer: buffer)
+  }
+}
+
+extension ViewController: VisionServiceDelegate {
+  func visionService(_ version: VisionService, didDetect image: UIImage, results: [VNTextObservation]) {
+    boxService.handle(image: image, results: results, on: cameraController.view)
   }
 }

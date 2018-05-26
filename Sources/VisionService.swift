@@ -8,10 +8,15 @@
 
 import Vision
 import AVFoundation
+import UIKit
+
+protocol VisionServiceDelegate: class {
+  func visionService(_ version: VisionService, didDetect image: UIImage, results: [VNTextObservation])
+}
 
 final class VisionService {
 
-  var handleResults: (([VNTextObservation]) -> Void)?
+  weak var delegate: VisionServiceDelegate?
 
   func handle(buffer: CMSampleBuffer) {
     guard
@@ -20,23 +25,31 @@ final class VisionService {
       return
     }
 
-    makeRequest(pixelBuffer: pixelBuffer)
+    let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
+    let image = UIImage(ciImage: ciImage)
+    makeRequest(image: image)
   }
 
-  private func makeRequest(pixelBuffer: CVPixelBuffer) {
+  private func makeRequest(image: UIImage) {
+    guard let cgImage = image.cgImage else {
+      assertionFailure()
+      return
+    }
+
     let handler = VNImageRequestHandler(
-      cvPixelBuffer: pixelBuffer,
+      cgImage: cgImage,
       orientation: .up,
       options: [VNImageOption: Any]()
     )
 
     let request = VNDetectTextRectanglesRequest(completionHandler: { [weak self] request, error in
       DispatchQueue.main.async {
-        self?.handle(request: request, error: error)
+        self?.handle(image: image, request: request, error: error)
       }
     })
 
     request.reportCharacterBoxes = true
+
     do {
       try handler.perform([request])
     } catch {
@@ -44,13 +57,13 @@ final class VisionService {
     }
   }
 
-  private func handle(request: VNRequest, error: Error?) {
+  private func handle(image: UIImage, request: VNRequest, error: Error?) {
     guard
       let results = request.results as? [VNTextObservation]
     else {
       return
     }
 
-    handleResults?(results)
+    delegate?.visionService(self, didDetect: image, results: results)
   }
 }

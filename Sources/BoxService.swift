@@ -12,7 +12,7 @@ import Vision
 final class BoxService {
   private var layers: [CALayer] = []
 
-  func handle(results: [VNTextObservation], on view: UIView) {
+  func handle(image: UIImage, results: [VNTextObservation], on view: UIView) {
     reset()
 
     layers = results.map({ result in
@@ -21,13 +21,11 @@ final class BoxService {
       layer.borderWidth = 2
       layer.borderColor = UIColor.green.cgColor
 
-      let rect = CGRect(
-        x: result.boundingBox.minX * view.bounds.size.width,
-        y: result.boundingBox.minY * view.bounds.size.height,
-        width: (result.boundingBox.maxX - result.boundingBox.minX) * view.bounds.size.width,
-        height: (result.boundingBox.maxY - result.boundingBox.minY) * view.bounds.size.height
-      )
+      var transform = CGAffineTransform.identity
+      transform = transform.scaledBy(x: view.bounds.size.width, y: -view.bounds.size.height)
+      transform = transform.translatedBy(x: 0, y: -1)
 
+      let rect = result.boundingBox.applying(transform)
       layer.frame = rect
 
       return layer
