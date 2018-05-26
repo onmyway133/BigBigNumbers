@@ -37,8 +37,6 @@ class ViewController: UIViewController {
     super.touchesBegan(touches, with: event)
 
     musicService.play(fileName: "introduction")
-    musicService.play(fileName: "6")
-    musicService.play(fileName: "end")
   }
 }
 
