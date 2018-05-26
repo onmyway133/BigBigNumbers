@@ -37,6 +37,8 @@ final class OCRService {
   private func handleWithTesseract(image: UIImage) {
     tesseract.image = image.g8_blackAndWhite()
     tesseract.recognize()
-    delegate?.ocrService(self, didDetect: tesseract.recognizedText)
+    let text = tesseract.recognizedText ?? ""
+    print(text)
+    delegate?.ocrService(self, didDetect: text)
   }
 }
