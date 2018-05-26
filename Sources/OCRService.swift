@@ -49,6 +49,8 @@ final class OCRService {
       return tesseract.recognizedText
     })
 
+    print(texts)
+
     delegate?.ocrService(self, didDetect: texts)
   }
 }

@@ -23,6 +23,7 @@ final class BoxService {
     reset()
 
     var images: [UIImage] = []
+    let results = results.filter({ $0.confidence > 0.5 })
 
     layers = results.map({ result in
       let layer = CALayer()
