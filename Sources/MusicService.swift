@@ -72,7 +72,7 @@ final class MusicService {
   }
 
   private func parseNumber(text: String) -> Int? {
-    let acceptedLetters = Array(0..<9).map(String.init) + ["-"]
+    let acceptedLetters = Array(0..<9).map(String.init) + ["-+"]
 
     let characters = text
       .replacingOccurrences(of: "\n", with: "")
