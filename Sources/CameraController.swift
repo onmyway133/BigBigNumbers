@@ -30,6 +30,7 @@ final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBu
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    cameraLayer.videoGravity = .resizeAspectFill
     view.layer.addSublayer(cameraLayer)
 
     // register to receive buffers from the camera
