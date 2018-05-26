@@ -20,7 +20,15 @@ final class BoxService {
       view.layer.addSublayer(layer)
       layer.borderWidth = 2
       layer.borderColor = UIColor.green.cgColor
-      layer.frame = result.boundingBox
+
+      let rect = CGRect(
+        x: result.boundingBox.minX * view.bounds.size.width,
+        y: result.boundingBox.minY * view.bounds.size.height,
+        width: (result.boundingBox.maxX - result.boundingBox.minX) * view.bounds.size.width,
+        height: (result.boundingBox.maxY - result.boundingBox.minY) * view.bounds.size.height
+      )
+
+      layer.frame = rect
 
       return layer
     })

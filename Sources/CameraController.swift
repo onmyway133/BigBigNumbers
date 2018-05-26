@@ -60,6 +60,18 @@ final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBu
     didOutput sampleBuffer: CMSampleBuffer,
     from connection: AVCaptureConnection) {
 
-    delegate?.cameraController(self, didCapture: sampleBuffer)
+    sample = sampleBuffer
+  }
+
+  // FIXME: Test
+
+  var sample: CMSampleBuffer?
+
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+
+    if let sample = sample {
+      delegate?.cameraController(self, didCapture: sample)
+    }
   }
 }

@@ -26,6 +26,7 @@ final class VisionService {
   private func makeRequest(pixelBuffer: CVPixelBuffer) {
     let handler = VNImageRequestHandler(
       cvPixelBuffer: pixelBuffer,
+      orientation: .up,
       options: [VNImageOption: Any]()
     )
 
