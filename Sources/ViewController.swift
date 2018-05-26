@@ -39,7 +39,12 @@ extension ViewController: CameraControllerDelegate {
 
 extension ViewController: VisionServiceDelegate {
   func visionService(_ version: VisionService, didDetect image: UIImage, results: [VNTextObservation]) {
-    boxService.handle(image: image, results: results, on: cameraController.view)
+    boxService.handle(
+      cameraLayer: cameraController.cameraLayer,
+      image: image,
+      results: results,
+      on: cameraController.view
+    )
   }
 }
 

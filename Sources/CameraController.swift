@@ -14,7 +14,7 @@ protocol CameraControllerDelegate: class {
 }
 
 final class CameraController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-  private lazy var cameraLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
+  private(set) lazy var cameraLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
 
   private lazy var captureSession: AVCaptureSession = {
     let session = AVCaptureSession()
