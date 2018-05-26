@@ -13,6 +13,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
   private let cameraController = CameraController()
+  private let visionService = VisionService()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,6 +28,6 @@ class ViewController: UIViewController {
 
 extension ViewController: CameraControllerDelegate {
   func cameraController(_ controller: CameraController, didCapture buffer: CMSampleBuffer) {
-
+    visionService.handle(buffer: buffer)
   }
 }
