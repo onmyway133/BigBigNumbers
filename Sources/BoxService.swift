@@ -10,7 +10,7 @@ import UIKit
 import Vision
 
 final class BoxService {
-  private var layers: [CAShapeLayer] = []
+  private var layers: [CALayer] = []
 
   func handle(results: [VNTextObservation], on view: UIView) {
     reset()
@@ -18,6 +18,9 @@ final class BoxService {
     layers = results.map({ result in
       let layer = CAShapeLayer()
       view.layer.addSublayer(layer)
+      layer.borderWidth = 2
+      layer.borderColor = UIColor.green.cgColor
+      layer.frame = result.boundingBox
 
       return layer
     })

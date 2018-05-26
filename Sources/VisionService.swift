@@ -30,7 +30,9 @@ final class VisionService {
     )
 
     let request = VNDetectTextRectanglesRequest(completionHandler: { [weak self] request, error in
-      self?.handle(request: request, error: error)
+      DispatchQueue.main.async {
+        self?.handle(request: request, error: error)
+      }
     })
 
     request.reportCharacterBoxes = true
