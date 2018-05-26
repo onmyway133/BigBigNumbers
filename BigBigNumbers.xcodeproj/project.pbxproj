@@ -24,6 +24,19 @@
 		D2D285A420B9A234002F6A89 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D285A320B9A234002F6A89 /* TesseractOCR.framework */; };
 		D2D285A720B9A279002F6A89 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D2D285A620B9A279002F6A89 /* tessdata */; };
 		D2D285A920B9A488002F6A89 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D285A820B9A488002F6A89 /* MusicService.swift */; };
+		D2D285B820B9AF5C002F6A89 /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285AB20B9AF5C002F6A89 /* 8.m4a */; };
+		D2D285B920B9AF5C002F6A89 /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285AC20B9AF5C002F6A89 /* 9.m4a */; };
+		D2D285BA20B9AF5C002F6A89 /* 11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285AD20B9AF5C002F6A89 /* 11.m4a */; };
+		D2D285BB20B9AF5C002F6A89 /* 10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285AE20B9AF5C002F6A89 /* 10.m4a */; };
+		D2D285BC20B9AF5C002F6A89 /* end.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285AF20B9AF5C002F6A89 /* end.m4a */; };
+		D2D285BD20B9AF5C002F6A89 /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B020B9AF5C002F6A89 /* 1.m4a */; };
+		D2D285BE20B9AF5C002F6A89 /* introduction.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B120B9AF5C002F6A89 /* introduction.m4a */; };
+		D2D285BF20B9AF5C002F6A89 /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B220B9AF5C002F6A89 /* 2.m4a */; };
+		D2D285C020B9AF5C002F6A89 /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B320B9AF5C002F6A89 /* 3.m4a */; };
+		D2D285C120B9AF5C002F6A89 /* 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B420B9AF5C002F6A89 /* 7.m4a */; };
+		D2D285C220B9AF5C002F6A89 /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B520B9AF5C002F6A89 /* 6.m4a */; };
+		D2D285C320B9AF5C002F6A89 /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B620B9AF5C002F6A89 /* 4.m4a */; };
+		D2D285C420B9AF5C002F6A89 /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D2D285B720B9AF5C002F6A89 /* 5.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +60,19 @@
 		D2D285A320B9A234002F6A89 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D285A620B9A279002F6A89 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		D2D285A820B9A488002F6A89 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		D2D285AB20B9AF5C002F6A89 /* 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.m4a; sourceTree = "<group>"; };
+		D2D285AC20B9AF5C002F6A89 /* 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.m4a; sourceTree = "<group>"; };
+		D2D285AD20B9AF5C002F6A89 /* 11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11.m4a; sourceTree = "<group>"; };
+		D2D285AE20B9AF5C002F6A89 /* 10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.m4a; sourceTree = "<group>"; };
+		D2D285AF20B9AF5C002F6A89 /* end.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = end.m4a; sourceTree = "<group>"; };
+		D2D285B020B9AF5C002F6A89 /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		D2D285B120B9AF5C002F6A89 /* introduction.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = introduction.m4a; sourceTree = "<group>"; };
+		D2D285B220B9AF5C002F6A89 /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
+		D2D285B320B9AF5C002F6A89 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
+		D2D285B420B9AF5C002F6A89 /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.m4a; sourceTree = "<group>"; };
+		D2D285B520B9AF5C002F6A89 /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.m4a; sourceTree = "<group>"; };
+		D2D285B620B9AF5C002F6A89 /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.m4a; sourceTree = "<group>"; };
+		D2D285B720B9AF5C002F6A89 /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
 		FBA9520B90AC53B98A6C84B6 /* Pods-BigBigNumbers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBigNumbers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigBigNumbers/Pods-BigBigNumbers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +133,7 @@
 		D2D2855820B96690002F6A89 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2D285AA20B9AF5C002F6A89 /* Sound */,
 				D2D285A620B9A279002F6A89 /* tessdata */,
 				D2D2855920B96690002F6A89 /* Assets.xcassets */,
 				D2D2855A20B96690002F6A89 /* LaunchScreen.storyboard */,
@@ -130,6 +157,26 @@
 				D2D285A820B9A488002F6A89 /* MusicService.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D2D285AA20B9AF5C002F6A89 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D2D285AB20B9AF5C002F6A89 /* 8.m4a */,
+				D2D285AC20B9AF5C002F6A89 /* 9.m4a */,
+				D2D285AD20B9AF5C002F6A89 /* 11.m4a */,
+				D2D285AE20B9AF5C002F6A89 /* 10.m4a */,
+				D2D285AF20B9AF5C002F6A89 /* end.m4a */,
+				D2D285B020B9AF5C002F6A89 /* 1.m4a */,
+				D2D285B120B9AF5C002F6A89 /* introduction.m4a */,
+				D2D285B220B9AF5C002F6A89 /* 2.m4a */,
+				D2D285B320B9AF5C002F6A89 /* 3.m4a */,
+				D2D285B420B9AF5C002F6A89 /* 7.m4a */,
+				D2D285B520B9AF5C002F6A89 /* 6.m4a */,
+				D2D285B620B9AF5C002F6A89 /* 4.m4a */,
+				D2D285B720B9AF5C002F6A89 /* 5.m4a */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,10 +239,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D285B920B9AF5C002F6A89 /* 9.m4a in Resources */,
 				D2D2856420B96690002F6A89 /* Main.storyboard in Resources */,
+				D2D285BD20B9AF5C002F6A89 /* 1.m4a in Resources */,
+				D2D285C420B9AF5C002F6A89 /* 5.m4a in Resources */,
+				D2D285BF20B9AF5C002F6A89 /* 2.m4a in Resources */,
 				D2D285A720B9A279002F6A89 /* tessdata in Resources */,
+				D2D285BC20B9AF5C002F6A89 /* end.m4a in Resources */,
 				D2D2856220B96690002F6A89 /* Assets.xcassets in Resources */,
+				D2D285C020B9AF5C002F6A89 /* 3.m4a in Resources */,
+				D2D285B820B9AF5C002F6A89 /* 8.m4a in Resources */,
+				D2D285C320B9AF5C002F6A89 /* 4.m4a in Resources */,
+				D2D285BA20B9AF5C002F6A89 /* 11.m4a in Resources */,
+				D2D285C120B9AF5C002F6A89 /* 7.m4a in Resources */,
 				D2D2856320B96690002F6A89 /* LaunchScreen.storyboard in Resources */,
+				D2D285C220B9AF5C002F6A89 /* 6.m4a in Resources */,
+				D2D285BB20B9AF5C002F6A89 /* 10.m4a in Resources */,
+				D2D285BE20B9AF5C002F6A89 /* introduction.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

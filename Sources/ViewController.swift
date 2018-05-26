@@ -32,6 +32,14 @@ class ViewController: UIViewController {
     boxService.delegate = self
     ocrService.delegate = self
   }
+
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+
+    musicService.play(fileName: "introduction")
+    musicService.play(fileName: "6")
+    musicService.play(fileName: "end")
+  }
 }
 
 extension ViewController: CameraControllerDelegate {
